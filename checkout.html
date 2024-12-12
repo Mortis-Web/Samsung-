@@ -1,0 +1,402 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		 <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+
+		<title>Electro - HTML Ecommerce Template</title>
+
+ 		<!-- Google font -->
+ 		<link href="https://fonts.googleapis.com/css?family=Montserrat:400,500,700" rel="stylesheet">
+
+ 		<!-- Bootstrap -->
+ 		<link type="text/css" rel="stylesheet" href="css/bootstrap.min.css"/>
+
+ 		<!-- Slick -->
+ 		<link type="text/css" rel="stylesheet" href="css/slick.css"/>
+ 		<link type="text/css" rel="stylesheet" href="css/slick-theme.css"/>
+
+ 		<!-- nouislider -->
+ 		<link type="text/css" rel="stylesheet" href="css/nouislider.min.css"/>
+		 <link rel="stylesheet" href="../fontawesome-free-6.4.2-web/css/all.min.css">
+		 <link rel="stylesheet" href="./css/css.css">
+ 		<!-- Font Awesome Icon -->
+ 		<link rel="stylesheet" href="css/font-awesome.min.css">
+		<link rel="stylesheet" href="./css/aos.css">
+		<link rel="stylesheet" href="./css/main.css">
+		
+
+ 		<!-- Custom stlylesheet -->
+ 		<link type="text/css" rel="stylesheet" href="css/style.css"/>
+
+	
+    </head>
+	<body>
+		<!-- HEADER -->
+		<nav id="nav-bar" data-aos="fade-right" data-aos-delay="500"><!--SIDE ICONS FOR NAVIGATION ADD MORE IF NEEDED -->
+			<a href="./index.html"> <div class="nav-icons"><div class="icon-shower"><i class="fa-solid fa-shop"></i></div>
+				<div class="nav-icon-head">Shop</div></div></a>
+				<a href="./product.html"><div class="nav-icons"><div class="icon-shower"><i class="fa-solid fa-icons"></i></div><div class="nav-icon-head">Back To Products</div></div></a>
+			<a href="#contact"><div class="nav-icons"><div class="icon-shower"><i class="fa-solid fa-link"></i></div><div class="nav-icon-head">Links </div></div></a>
+		</nav>
+		<header data-aos="fade-down"><!--HEADER SECTION -->
+			<div class="overlay"></div>
+			<div class="header-list" id="header-list">
+				<div class="exit-list"><i class="fa-solid fa-xmark"></i></div>
+				<ul class="header-list-ul">
+					<!-- EACH LINK WILL OPEN NEW HTML PAGE FOR ITS PERPOUSE FOR TABLET AND MOBILE -->
+					<li><i class="fa-solid fa-house"></i>home</li>
+					<li><i class="fa-regular fa-thumbs-up"></i>favourites</li>
+					<li><i class="fa-regular fa-star"></i>top sellers</li>
+					<li><i class="fa-solid fa-icons"></i>latest products</li>
+					<li><i class="fa-solid fa-cart-shopping"></i>purchases</li>
+					<li><i class="fa-solid fa-right-to-bracket"></i>login</li>
+					<li><i class="fa-regular fa-heart"></i>wishlist</li>
+					<li><i class="fa-solid fa-user-secret"></i></i>admin regestration</li>
+					<li><i class="fa-solid fa-plus"></i>add categorie</li>
+	
+				</ul>
+				<div class="ListLogo"><img src="../images/logo.png" alt="" srcset=""></div>
+			</div>
+				<div class="registor">
+						<div class="logo">
+							<img src="../images/logo.png" alt="" srcset="">
+						</div>
+						<div class="search-bar"><input type="text" name="search-bar" id="SEARCH-BAR" placeholder="Search For Products" oninput="loading()">
+						<div class="glass"><i class="fa-solid fa-magnifying-glass"></i></div>
+					<div class="loader"></div>
+					</div>
+						<!-- SEARCH-BAR -->   
+						<div class="log">
+							<div class="log-list" id="icon"><i class="fa-solid fa-bars"></i></div>    
+							<a href="#wishlistPage"> <div class="wishlist"><i class="fa-solid fa-heart"></i></div></a><!--WISH LIST BUTTON -->
+							<a href="../Modern-Login-Page-OrangeRed-main/index.html" target="_blank" rel="noopener noreferrer"> <button class="login"><div class="log-prehover"> <i class="fa-solid fa-user"></i> login </div><div class="hover-icon"><i class="fa-solid fa-right-to-bracket"></i></div> </button></a><!--LOGIN BUTTON-->
+							<button class="admin"><i class="fa-solid fa-user-secret"></i></i>admin regestration <div class="admin-icon"></div></button><!--ADMIN BUTTON-->
+						</div>
+				</div>
+		</header>
+
+		<!-- BREADCRUMB -->
+		<div id="breadcrumb" class="section" data-aos="fade-right">
+			<!-- container -->
+			<div class="container">
+				<!-- row -->
+				<div class="row">
+					<div class="col-md-12" >
+						<h3 class="breadcrumb-header">Checkout</h3>
+						<ul class="breadcrumb-tree">
+							<li><a href="#">Home</a></li>
+							<li class="active">Checkout</li>
+						</ul>
+					</div>
+				</div>
+				<!-- /row -->
+			</div>
+			<!-- /container -->
+		</div>
+		<!-- /BREADCRUMB -->
+
+		<!-- SECTION -->
+		<div class="section" >
+			<!-- container -->
+			<div class="container">
+				<!-- row -->
+				<div class="row">
+
+					<div class="col-md-7">
+						<!-- Billing Details -->
+						<div class="billing-details" data-aos="fade-right" data-aos-delay="300">
+							<div class="section-title">
+								<h3 class="title">Billing address</h3>
+							</div>
+							<div class="form-group">
+								<input class="input" type="text" name="first-name" placeholder="First Name">
+							</div>
+							<div class="form-group">
+								<input class="input" type="text" name="last-name" placeholder="Last Name">
+							</div>
+							<div class="form-group">
+								<input class="input" type="email" name="email" placeholder="Email">
+							</div>
+							<div class="form-group">
+								<input class="input" type="text" name="address" placeholder="Address">
+							</div>
+							<div class="form-group">
+								<input class="input" type="text" name="city" placeholder="City">
+							</div>
+							<div class="form-group">
+								<input class="input" type="text" name="country" placeholder="Country">
+							</div>
+							<div class="form-group">
+								<input class="input" type="text" name="zip-code" placeholder="ZIP Code">
+							</div>
+							<div class="form-group">
+								<input class="input" type="tel" name="tel" placeholder="Telephone">
+							</div>
+							<div class="form-group">
+								<div class="input-checkbox">
+									<input type="checkbox" id="create-account">
+									<label for="create-account">
+										<span></span>
+										Create Account?
+									</label>
+									<div class="caption">
+										<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt.</p>
+										<input class="input" type="password" name="password" placeholder="Enter Your Password">
+									</div>
+								</div>
+							</div>
+						</div>
+						<!-- /Billing Details -->
+
+						<!-- Shiping Details -->
+						<div class="shiping-details">
+							<div class="section-title">
+								<h3 class="title">Shiping address</h3>
+							</div>
+							<div class="input-checkbox">
+								<input type="checkbox" id="shiping-address">
+								<label for="shiping-address">
+									<span></span>
+									Ship to a diffrent address?
+								</label>
+								<div class="caption">
+									<div class="form-group">
+										<input class="input" type="text" name="first-name" placeholder="First Name">
+									</div>
+									<div class="form-group">
+										<input class="input" type="text" name="last-name" placeholder="Last Name">
+									</div>
+									<div class="form-group">
+										<input class="input" type="email" name="email" placeholder="Email">
+									</div>
+									<div class="form-group">
+										<input class="input" type="text" name="address" placeholder="Address">
+									</div>
+									<div class="form-group">
+										<input class="input" type="text" name="city" placeholder="City">
+									</div>
+									<div class="form-group">
+										<input class="input" type="text" name="country" placeholder="Country">
+									</div>
+									<div class="form-group">
+										<input class="input" type="text" name="zip-code" placeholder="ZIP Code">
+									</div>
+									<div class="form-group">
+										<input class="input" type="tel" name="tel" placeholder="Telephone">
+									</div>
+								</div>
+							</div>
+						</div>
+						<!-- /Shiping Details -->
+
+						<!-- Order notes -->
+						<div class="order-notes" >
+							<textarea class="input" placeholder="Order Notes"></textarea>
+						</div>
+						<!-- /Order notes -->
+					</div>
+
+					<!-- Order Details -->
+					<div class="col-md-5 order-details" data-aos="fade-left" data-aos-delay="400">
+						<div class="section-title text-center">
+							<h3 class="title">Your Order</h3>
+						</div>
+						<div class="order-summary">
+							<div class="order-col">
+								<div><strong>PRODUCT</strong></div>
+								<div><strong>TOTAL</strong></div>
+							</div>
+							<div class="order-products">
+								<div class="order-col">
+									<div>1x Product Name Goes Here</div>
+									<div>$980.00</div>
+								</div>
+								<div class="order-col">
+									<div>2x Product Name Goes Here</div>
+									<div>$980.00</div>
+								</div>
+							</div>
+							<div class="order-col">
+								<div>Shiping</div>
+								<div><strong>FREE</strong></div>
+							</div>
+							<div class="order-col">
+								<div><strong>TOTAL</strong></div>
+								<div><strong class="order-total">$2940.00</strong></div>
+							</div>
+						</div>
+						<div class="payment-method">
+							<div class="input-radio">
+								<input type="radio" name="payment" id="payment-1">
+								<label for="payment-1">
+									<span></span>
+									Direct Bank Transfer
+								</label>
+								<div class="caption">
+									<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+								</div>
+							</div>
+							<div class="input-radio">
+								<input type="radio" name="payment" id="payment-2">
+								<label for="payment-2">
+									<span></span>
+									Cheque Payment
+								</label>
+								<div class="caption">
+									<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+								</div>
+							</div>
+							<div class="input-radio">
+								<input type="radio" name="payment" id="payment-3">
+								<label for="payment-3">
+									<span></span>
+									Paypal System
+								</label>
+								<div class="caption">
+									<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+								</div>
+							</div>
+						</div>
+						<div class="input-checkbox">
+							<input type="checkbox" id="terms">
+							<label for="terms">
+								<span></span>
+								I've read and accept the <a href="#">terms & conditions</a>
+							</label>
+						</div>
+						<a href="#" class="primary-btn order-submit">Place order</a>
+					</div>
+					<!-- /Order Details -->
+				</div>
+				<!-- /row -->
+			</div>
+			<!-- /container -->
+		</div>
+		<!-- /SECTION -->
+
+		<!-- NEWSLETTER -->
+		<div id="newsletter" class="section" data-aos="fade-left">
+			<!-- container -->
+			<div class="container">
+				<!-- row -->
+				<div class="row">
+					<div class="col-md-12">
+						<div class="newsletter">
+							<p>Sign Up for the <strong>NEWSLETTER</strong></p>
+							<form>
+								<input class="input" type="email" placeholder="Enter Your Email">
+								<button class="newsletter-btn"><i class="fa fa-envelope"></i> Subscribe</button>
+							</form>
+							<ul class="newsletter-follow">
+								<li>
+									<a href="#"><i class="fa-brands fa-facebook-f fa-lg"></i></a>
+								</li>
+								<li>
+									<a href="#"><i class="fa-brands fa-twitter fa-lg"></i></a>
+								</li>
+								<li>
+									<a href="#"><i class="fa-brands fa-instagram fa-lg"></i></a>
+								</li>
+								<li>
+									<a href="#"><i class="fa-brands fa-pinterest fa-lg"></i></a>
+								</li>
+							</ul>
+						</div>
+					</div>
+				</div>
+				<!-- /row -->
+			</div>
+			<!-- /container -->
+		</div>
+		<!-- /NEWSLETTER -->
+
+		       <!-- FOOTER -->
+    
+			   <footer id="contact">
+				<div class="container">
+					<div class="contents">
+						<!--links holder-->
+						<div class="links" data-aos="fade-up">
+							<h2>Important Links</h2>
+							<p> <i class="fa-solid fa-arrow-right fa-2xs"></i><a href="https://v3.account.samsung.com/dashboard/intro" target="_blank"> Google</a></p>
+							<p> <i class="fa-solid fa-arrow-right fa-2xs"></i><a href="https://dribbble.com/tags/samsung" target="_blank"> Dribbble</a></p>
+							<p> <i class="fa-solid fa-arrow-right fa-2xs"></i><a href="/index.html"  target="_blank"> Offical Website</a></p>
+							<p> <i class="fa-solid fa-arrow-right fa-2xs"></i><a target="_blank" href="https://ar.wikipedia.org/wiki/%D8%B3%D8%A7%D9%85%D8%B3%D9%88%D9%86%D8%AC"> Wikipedia </a></p>
+		
+							</div>
+							<div>
+							<div class="links" data-aos="fade-up" data-aos-delay="300">
+								<!--contact info-->
+								<h2>Contact Informations</h2>
+								<p> <i class="fa-solid fa-envelope "></i><a href="mailto:khaial.mokhtal@gmail.com"
+									target="_blank">khaial.mokhtal@gmail.com</a></p>
+								<p> <i class="fa-solid fa-location-dot "></i></i><a target="_blank"
+										href="https://www.google.com/maps/place/%D9%83%D9%84%D9%8A%D8%A9+%D8%A7%D9%84%D8%B2%D8%B1%D8%A7%D8%B9%D8%A9+%D8%AC%D8%A7%D9%85%D8%B9%D8%A9+%D8%AF%D9%85%D9%86%D9%87%D9%88%D8%B1%E2%80%AD/@31.038079,30.434602,13z/data=!4m6!3m5!1s0x14f66c793a6568f7:0x4071775ab450d881!8m2!3d31.0380794!4d30.4346016!16s%2Fg%2F11c2np01dg?hl=ar&entry=ttu">
+										Egypt, Beheira, Damanhour
+									</a></p>
+								<p><i class="fa-solid fa-phone "></i><a href="tel:0201550461604" target="_blank">01550461604</a>
+								</p>
+								<p> <i class="fa-brands fa-whatsapp fa-lg"></i><a href="https://wa.me/+201550461604"
+										target="_blank">+201550461604</a>
+							</div>
+						</div>
+						<div class="sublinks" data-aos="fade-up" data-aos-delay="400">
+							<h2>
+								Subscribe with us
+							</h2>
+							<div class="subscribe">
+								<form action="./shop/Modern-Login-Page-OrangeRed-main/index.html" target="_blank">
+									<label> Subscribe to our newsletter!</label>
+									<div class="inputF">
+										<input type="email" placeholder="Email Address..." class="email" required>
+										<input type="submit" class="submit" value="send">
+										<!-- <i class="fa-solid fa-paper-plane "></i> -->
+									</div>
+								</form>
+								<P>We don’t do mail to spam & your mail id is confidential.</P>
+								</div>
+								<div class="icons">
+									<a href="https://www.facebook.com/SamsungEgypt/" target="_blank"><i class="fa-brands fa-facebook-f fa-lg"></i></a>
+									<a href="https://www.youtube.com/samsung" target="_blank"><i class="fa-brands fa-youtube fa-lg"></i></a>
+									<a href="https://x.com/samsung?lang=ar" target="_blank"><i class="fa-brands fa-twitter fa-lg"></i></a>
+									<a href="https://www.instagram.com/samsung/?hl=ar" target="_blank"><i class="fa-brands fa-instagram fa-lg"></i></a>
+									<a href="https://www.pinterest.com/samsungUS/" target="_blank"><i class="fa-brands fa-pinterest fa-lg"></i></a>
+								</div>
+						</div>
+					</div>
+				</div>
+				</div>
+				<div class="blackline" > <!--regestration-->
+					<div class="bl_text" >
+						<p>Copy right reserved Damanhour Univesrity<div class="bl_date"> © 2024 </div></p>
+					</div>
+					
+					
+				</div>
+			</footer>
+			<span class="go-top-btn">
+				<i class="fas fa-arrow-circle-up fa-2xl"></i>
+			</span>
+		
+		<!-- /FOOTER -->
+
+		<!-- jQuery Plugins -->
+		<script src="js/jquery.min.js"></script>
+		<script src="js/bootstrap.min.js"></script>
+		<script src="js/slick.min.js"></script>
+		<script src="js/nouislider.min.js"></script>
+		<script src="js/jquery.zoom.min.js"></script>
+		<script src="js/main.js"></script>
+		<script src="./js/js.js"></script>
+		<script src="./js/aos.js"></script>
+		<script>
+			AOS.init();
+		</script>
+
+
+
+	</body>
+</html>

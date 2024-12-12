@@ -1,0 +1,66 @@
+/* General Styling And Scroll */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  direction: ltr;
+  scroll-behavior: smooth;
+}
+
+html::-webkit-scrollbar {
+  width: 1.5rem;
+}
+
+html::-webkit-scrollbar-track {
+    background: #1e3a8a;
+}
+
+html::-webkit-scrollbar-thumb {
+  background: white;
+  border-radius: 0.5rem;
+  cursor: grab;
+  border-left: 1px solid #1e3a8a ;
+}
+html::-webkit-scrollbar-thumb:active {
+  cursor: grabbing;
+}
+html::-webkit-scrollbar-track:window-inactive{
+  background-color: #111;
+}
+html::-webkit-scrollbar-thumb:window-inactive{
+  border-radius: 0px;
+  background-color: red;
+}
+.container {
+    padding: 0px 15px;
+    margin: auto;
+    }
+
+
+  .size{
+    height: 100vh;
+  }
+  
+  /* ======CONTAINER MEDIA============= */
+
+  @media (min-width: 768px) {
+    .container {
+      width: 750px;
+    }
+  }
+  
+  @media (min-width: 992px) {
+    .container {
+      width: 970px;
+    }
+  }
+  
+  @media (min-width: 1200px) {
+    .container {
+      width: 1170px;
+    }
+  }
+  
