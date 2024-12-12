@@ -267,7 +267,7 @@ footer {
   left: 0;
   width: 50%;
   height: 100%;
-  background: url('./pcs/DeWatermark.ai_1733942743016.jpg') no-repeat center center/cover ;
+  background: url('DeWatermark.ai_1733942743016.jpg') no-repeat center center/cover ;
 }
 
 .hero-content {
@@ -499,14 +499,14 @@ a {
 }
 
 .g1_img1 {
-  background-image: url("./pcs/pexels-zeleboba-28920287\ \(1\).jpg");
+  background-image: url("pexels-zeleboba-28920287\ \(1\).jpg");
   background-repeat: no-repeat;
   background-size: cover;
   position: relative;
 }
 
 .g1_img3 {
-  background-image: url("./pcs/pexels-imadclicks-11772523\ \(1\).jpg");
+  background-image: url("pexels-imadclicks-11772523\ \(1\).jpg");
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
@@ -525,28 +525,28 @@ a {
 }
 
 .g1_sec1 .sec1_img1 {
-  background-image: url("./pcs/pexels-oandremoura-2402705\ \(2\).jpg");
+  background-image: url("pexels-oandremoura-2402705\ \(2\).jpg");
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
 }
 
 .g1_sec1 .sec1_img2 {
-  background-image: url('./pcs/pexels-rubaitulazad-16149966\ \(1\).jpg');
+  background-image: url('pexels-rubaitulazad-16149966\ \(1\).jpg');
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
 }
 
 .g1_sec2 .sec1_img1 {
-  background-image: url("./pcs/pexels-xtrovarts-16812192\ \(1\).jpg");
+  background-image: url("pexels-xtrovarts-16812192\ \(1\).jpg");
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
 }
 
 .g1_sec2 .sec1_img2 {
-  background-image: url("./pcs/pexels-zeleboba-22604142\ \(1\).jpg");
+  background-image: url("pexels-zeleboba-22604142\ \(1\).jpg");
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
@@ -555,7 +555,7 @@ a {
 .g2 .g2_img2 {
   width: 100%;
   height: 100%;
-  background-image: url("./pcs/pexels-efrem-efre-2786187-21836885\ \(1\).jpg");
+  background-image: url("pexels-efrem-efre-2786187-21836885\ \(1\).jpg");
   background-repeat: no-repeat;
   background-position: calc(40%);
   background-size: cover;
@@ -771,7 +771,7 @@ gap:20px;
 }
 
 .slide_bg {
-  background: url("./pcs/DeWatermark.ai_1733942704955.jpg");
+  background: url("DeWatermark.ai_1733942704955.jpg");
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
