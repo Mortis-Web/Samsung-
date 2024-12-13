@@ -1244,6 +1244,8 @@ footer .container .contents .subscribe .input {
   display: flex;
   justify-content: center;
   direction: ltr;
+  box-shadow: 6px 6px 20px #121622;
+  border-radius: 5px;
 }
 footer .container .contents .subscribe .input input::placeholder {
   transition: all 0.4s;
@@ -1261,6 +1263,7 @@ footer .container .contents .subscribe .input .email {
   width: 100%;
   border-right:none;
   color: white;
+  border-radius: 5px 0px 0px 5px;
 }
 footer .container .contents .subscribe .input .email:focus {
   outline: none;
@@ -1277,7 +1280,8 @@ footer .container .contents .subscribe .input .submit {
   border: 1px #363636 solid;
   border-left:none;
   color: white;
-  text-transform:uppercase;
+  border-radius: 0px 5px 5px 0px;
+  text-transform:capitalize;
 }
 
 footer .container .contents .subscribe .input i {
