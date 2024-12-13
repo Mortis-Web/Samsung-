@@ -4,7 +4,7 @@ let bg = "--bg";
 let color = "--color";
 let bodyBg = "--bodyBG";
 let aqua = "--colorDes";
-let shower = document.querySelector(".nav-icon-head");
+let shower = document.querySelector("#dl");
 let sun = document.querySelector(".sun");
 let moon = document.querySelector(".moon");
 moon.style.display = "none";
@@ -24,7 +24,7 @@ lightDark.addEventListener("click", function () {
     // document.documentElement.style.setProperty('--Line', '#00ffd1');
     moon.style.display = "flex";
     sun.style.display = "none";
-    shower.innerHTML = "Dark-Mode";
+    shower.textContent = "Dark-Mode";
   }
 
   else {
@@ -36,7 +36,7 @@ lightDark.addEventListener("click", function () {
     // document.documentElement.style.setProperty('--Line', 'aqua');
     sun.style.display = "flex";
     moon.style.display = "none";
-    shower.innerHTML = "Light-Mode";
+    shower.textContent = "Light-Mode";
   }
 });
 
