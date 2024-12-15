@@ -38,11 +38,11 @@ icon.addEventListener("click", function (e) {
   section[1].style.zIndex = "-1";
   e.stopPropagation();
 });
+
 function UnZ(){
   section[0].style.zIndex = "1";
   section[1].style.zIndex = "1";
 };
-
 
 document.addEventListener("click", function (e) {
   if (!e.target.closest(".header-list") && !e.target.closest(".log-list")) {
@@ -57,8 +57,7 @@ exit.addEventListener("click", function () {
   list.classList.add("re-slide");
   darkBg.style.display = "none";
   document.body.classList.remove("remove-scroll");
-  section[0].style.zIndex = "1";
-  section[1].style.zIndex = "1";
+  setTimeout(UnZ,400);
 });
 
 // ========LOADING ANIMATION======
@@ -75,20 +74,20 @@ function loading() {
 function hideLoading() {
   glass.style.display = "flex";
   loader.style.display = "none";
-}
+};
 
 function LoseFocus(e) {
   if (e.key === "Enter" || myInput.value.trim() === "") {
     hideLoading();
-  }
-}
+  };
+};
 
 function handleBlur(e) {
   if (!e.target.closest(".search-bar")) {
     myInput.blur();
     hideLoading();
-  }
-}
+  };
+};
 
 document.addEventListener("click", handleBlur);
 myInput.addEventListener("keydown", LoseFocus);
@@ -131,19 +130,3 @@ cat.addEventListener("click", function (e) {
 
   Opened = !Opened;
 });
-
-// window.addEventListener("scroll", function () {
-//   let section2 = document.getElementById("sec3");
-//   let hiddenDiv = document.getElementById("nav-bar");
-
-//   let section2Position = section2.getBoundingClientRect();
-
-//   if (section2Position.top < -section2.offsetHeight) {
-//     hiddenDiv.style.display = "flex";
-//   }
-
-//   else{
-//     hiddenDiv.style.display = "none";
-//   }
-
-// });
