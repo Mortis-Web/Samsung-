@@ -101,6 +101,7 @@ header {
 .header-list {
   width: 350px;
   height: 100vh;
+  max-height:768px;
   position: absolute;
   background-color: white;
   box-shadow: 5px 5px 20px #111;
