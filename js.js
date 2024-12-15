@@ -38,15 +38,19 @@ icon.addEventListener("click", function (e) {
   section[1].style.zIndex = "-1";
   e.stopPropagation();
 });
+function UnZ(){
+  section[0].style.zIndex = "1";
+  section[1].style.zIndex = "1";
+};
+
 
 document.addEventListener("click", function (e) {
   if (!e.target.closest(".header-list") && !e.target.closest(".log-list")) {
     list.classList.add("re-slide");
     darkBg.style.display = "none";
     document.body.classList.remove("remove-scroll");
-    section[0].style.zIndex = "1";
-    section[1].style.zIndex = "1";
-  }
+    setTimeout(UnZ,400);
+     };
 });
 
 exit.addEventListener("click", function () {
