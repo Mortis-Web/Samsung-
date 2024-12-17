@@ -1,6 +1,5 @@
 /* General Reset and Styling */
 @import url(https://fonts.googleapis.com/earlyaccess/droidarabicnaskh.css);
-
 * {
   margin: 0;
   padding: 0;
@@ -69,12 +68,20 @@ body {
   transition: 0.25s color ease,0.25s background ease;
   direction: rtl;
 }
+
+#shop{
+font-family:'Droid Arabic Naskh', serif;  
+}
+
 nav,
 header,
 footer,
-#nav-bar{
+#nav-bar,
+.num,
+.switchers{
   font-family: jura;
 }
+
 a{
   color: var(--color);
 }
@@ -163,6 +170,7 @@ a{
   backdrop-filter: blur(10px);
   border-bottom: 2px solid var(--bg);
   box-shadow: 5px 5px 20px #111;
+  direction: ltr;
 }
 
 .navbar {
@@ -173,6 +181,7 @@ a{
 }
 .logo-holder {
   display: flex;
+  width:130px;
 }
 .navbar img {
   width: 100%;
@@ -1206,6 +1215,7 @@ footer .blackline {
   border-top: 1px solid var(--colorDes);
   align-items: center;
   bottom: 0;
+  direction: ltr;
 }
 
 footer .blackline span {
@@ -1223,6 +1233,15 @@ footer .bl_date {
 }
 footer .container .sublinks {
   line-height: 2;
+}
+footer .container .contents iframe {
+  width: 300px;
+  height: 250px;
+  border-radius: 10px;
+  filter: brightness(90%);
+  border: 2px solid var(--colorDes);
+  box-shadow: 6px 6px 20px #121622;
+
 }
 
 footer .container .contents .subscribe {
@@ -1251,8 +1270,9 @@ footer .container .contents .subscribe .input {
   justify-content: center;
   direction: ltr;
   box-shadow: 6px 6px 20px #121622;
-  border-radius: 5px;
+  border-radius: 7px;
 }
+
 footer .container .contents .subscribe .input input::placeholder {
   transition: all 0.4s;
 }
@@ -1269,7 +1289,7 @@ footer .container .contents .subscribe .input .email {
   width: 100%;
   border-right:none;
   color: white;
-  border-radius: 5px 0px 0px 5px;
+  border-radius: 7px 0px 0px 7px;
 }
 footer .container .contents .subscribe .input .email:focus {
   outline: none;
@@ -1286,7 +1306,7 @@ footer .container .contents .subscribe .input .submit {
   border: 1px #363636 solid;
   border-left:none;
   color: white;
-  border-radius: 0px 5px 5px 0px;
+  border-radius: 0px 7px 7px 0px;
   text-transform:capitalize;
 }
 
@@ -1657,6 +1677,11 @@ opacity: 0;
 }
 
 @media (max-width: 450px) {
+  
+  iframe{
+    width:250px !important;
+/*     height:225px !important; */
+  }
   .navbar {
     flex-direction: column;
    padding:0.25rem 1rem !important;
