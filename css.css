@@ -486,6 +486,7 @@ footer .container .links a {
   padding-left: 2px;
   padding-right: 4px;
   text-decoration: none;
+  color:white;
 }
 
 footer .container .links i {
@@ -520,7 +521,7 @@ footer .container .contents iframe {
   border-radius: 10px;
   filter: brightness(90%);
   border: 2px solid #1e3a8a;
-  box-shadow: 6px 6px 20px #121622;
+  box-shadow: 6px 6px 20px #111;
 
 }
 
@@ -544,6 +545,7 @@ footer .blackline .bl_text {
   padding: 15px;
   display: flex;
   gap: 5px;
+  color:white;
 }
 
 footer .bl_date {
@@ -567,10 +569,12 @@ footer .container .contents .subscribe p {
   padding-top: 10px;
   padding-bottom: 10px;
   margin:auto;
+  color:white;
 }
 
 footer .container .contents .subscribe label {
   font-weight: 600;
+  color:white;
 }
 
 footer .container .contents .subscribe .inputF {
