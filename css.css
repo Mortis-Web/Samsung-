@@ -101,7 +101,6 @@ header {
 .header-list {
   width: 350px;
   height: 100vh;
-  max-height:768px;
   position: absolute;
   background-color: white;
   box-shadow: 5px 5px 20px #111;
@@ -121,7 +120,7 @@ header {
 }
 
 .ListLogo img{
-  width: 50%;
+  width: 75%;
   object-fit: cover;
 }
 
@@ -178,8 +177,9 @@ li i {
   z-index: 10000;
 }
 .logo {
-  width: 110px;
+  width: 130px;
   height: 80px;
+  min-width:130px;
 }
 .logo img {
   width: 100%;
@@ -769,10 +769,11 @@ footer .container .contents .subscribe .inputF i {
   .registor {
     flex-direction: column;
   }
+  
   .logo {
-    width: 70px;
     height: 60px;
   }
+  
   .header-list {
     width: 280px;
   }
