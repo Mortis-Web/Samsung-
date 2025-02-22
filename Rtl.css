@@ -67,6 +67,9 @@ body {
   color: var(--color);
   transition: 0.25s color ease,0.25s background ease;
   direction: rtl;
+    text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
 }
 
 #shop{
