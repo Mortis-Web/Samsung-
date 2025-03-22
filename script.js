@@ -12,7 +12,7 @@ const darkTheme = {
   bg: "#090b13",
   colorDes: "aqua",
   LightHF: "#090b13",
-  text: "Dark-Mode",
+  text: "Light-Mode",
   sunDisplay: "flex",
   moonDisplay: "none"
 };
@@ -23,28 +23,47 @@ const lightTheme = {
   bg: "#FDF5E6",
   colorDes: "#00ffd1",
   LightHF: "#F5F5F4",
-  text: "Light-Mode",
+  text: "Dark-Mode",
   sunDisplay: "none",
   moonDisplay: "flex"
 };
 
+document.addEventListener("DOMContentLoaded",()=>{
+  const savedTheme = localStorage.getItem("theme");
+  if(savedTheme){
+    const theme = savedTheme  === "darkTheme" ? darkTheme : lightTheme; 
+    applyTheme(theme);
+  }
+  else{
+    applyTheme(darkTheme);
+  }
+
+})
+
 
 lightDark.addEventListener("click", function () {
-  const isDarkMode =
+  const currentTheme =
     getComputedStyle(document.documentElement)
       .getPropertyValue("--bodyBG")
-      .trim() === darkTheme.bodyBG;
+      .trim() === darkTheme.bodyBG ? darkTheme : lightTheme;
 
-      const theme = isDarkMode ? lightTheme:darkTheme;
-    document.documentElement.style.setProperty("--bodyBG", theme.bodyBG);
-    document.documentElement.style.setProperty("--color", theme.color);
-    document.documentElement.style.setProperty("--bg", theme.bg);
-    document.documentElement.style.setProperty('--colorDes', theme.colorDes);
-    document.documentElement.style.setProperty('--LightHF', theme.LightHF);
-    sun.style.display = theme.sunDisplay;
-    moon.style.display = theme.moonDisplay;
-    shower.innerHTML = theme.text;
+      const newTheme = currentTheme === darkTheme ? lightTheme : darkTheme;
+      localStorage.setItem("theme", newTheme === darkTheme ? "darkTheme" : "lightTheme");
+      applyTheme(newTheme);
+
 });
+
+const applyTheme =(theme)=>{
+      document.documentElement.style.setProperty("--bodyBG", theme.bodyBG);
+      document.documentElement.style.setProperty("--color", theme.color);
+      document.documentElement.style.setProperty("--bg", theme.bg);
+      document.documentElement.style.setProperty('--colorDes', theme.colorDes);
+      document.documentElement.style.setProperty('--LightHF', theme.LightHF);
+      sun.style.display = theme.sunDisplay;
+      moon.style.display = theme.moonDisplay;
+      shower.textContent = theme.text;
+      console.log(shower)
+};
 
 // =============NAV BUTTON===========
 
