@@ -223,6 +223,9 @@ a{
   display: flex;
   gap: 20px;
 }
+.header .icons a{
+  color:white;
+}
 .header .icons i {
   transition: 0.4s all;
   padding: 10px 0;
