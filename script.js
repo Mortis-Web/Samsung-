@@ -1,43 +1,49 @@
 //DARK AND LIGHT MODE
 let lightDark = document.querySelector("#LightDark");
-let bg = "--bg";
-let color = "--color";
-let bodyBg = "--bodyBG";
-let aqua = "--colorDes";
-let shower = document.querySelector("#dl");
+
+let shower = document.querySelector(".nav-icon-head");
 let sun = document.querySelector(".sun");
 let moon = document.querySelector(".moon");
 moon.style.display = "none";
+
+const darkTheme = {
+  bodyBG: "#121622",
+  color: "white",
+  bg: "#090b13",
+  colorDes: "aqua",
+  LightHF: "#090b13",
+  text: "Dark-Mode",
+  sunDisplay: "flex",
+  moonDisplay: "none"
+};
+
+const lightTheme = {
+  bodyBG: "#F3F3F3",
+  color: "black",
+  bg: "#FDF5E6",
+  colorDes: "#00ffd1",
+  LightHF: "#F5F5F4",
+  text: "Light-Mode",
+  sunDisplay: "none",
+  moonDisplay: "flex"
+};
+
 
 lightDark.addEventListener("click", function () {
   const isDarkMode =
     getComputedStyle(document.documentElement)
       .getPropertyValue("--bodyBG")
-      .trim() === "#121622";
+      .trim() === darkTheme.bodyBG;
 
-      if (isDarkMode) {
-    document.documentElement.style.setProperty("--bodyBG", "F3F3F3");
-    document.documentElement.style.setProperty("--color", "black");
-    document.documentElement.style.setProperty("--bg", "#FDF5E6");
-    document.documentElement.style.setProperty('--colorDes', '#00ffd1');
-    document.documentElement.style.setProperty('--LightHF', '#F5F5F4');
-    // document.documentElement.style.setProperty('--Line', '#00ffd1');
-    moon.style.display = "flex";
-    sun.style.display = "none";
-    shower.textContent = "Dark-Mode";
-  }
-
-  else {
-    document.documentElement.style.setProperty("--bodyBG", "#121622");
-    document.documentElement.style.setProperty("--color", "white");
-    document.documentElement.style.setProperty("--bg", "#090b13");
-    document.documentElement.style.setProperty("--colorDes", "aqua");
-    document.documentElement.style.setProperty('--LightHF', '#090b13');
-    // document.documentElement.style.setProperty('--Line', 'aqua');
-    sun.style.display = "flex";
-    moon.style.display = "none";
-    shower.textContent = "Light-Mode";
-  }
+      const theme = isDarkMode ? lightTheme:darkTheme;
+    document.documentElement.style.setProperty("--bodyBG", theme.bodyBG);
+    document.documentElement.style.setProperty("--color", theme.color);
+    document.documentElement.style.setProperty("--bg", theme.bg);
+    document.documentElement.style.setProperty('--colorDes', theme.colorDes);
+    document.documentElement.style.setProperty('--LightHF', theme.LightHF);
+    sun.style.display = theme.sunDisplay;
+    moon.style.display = theme.moonDisplay;
+    shower.innerHTML = theme.text;
 });
 
 // =============NAV BUTTON===========
