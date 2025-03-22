@@ -122,7 +122,8 @@ a{
   box-shadow: 0 0 5px #3b82f6, 0 0 15px #3b82f6, 0 0 25px #3b82f6,
     0 0 100px #3b82f6;
   transition: 0.25s all ease;
-  text-transform: capitalize;
+  text-transform: capitalize
+  will-change: width;
   &:hover {
     width: 175px;
   }
