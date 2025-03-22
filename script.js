@@ -1,7 +1,7 @@
 //DARK AND LIGHT MODE
 let lightDark = document.querySelector("#LightDark");
 
-let shower = document.querySelector(".nav-icon-head");
+let shower = document.querySelectorAll(".nav-icon-head");
 let sun = document.querySelector(".sun");
 let moon = document.querySelector(".moon");
 moon.style.display = "none";
@@ -61,8 +61,8 @@ const applyTheme =(theme)=>{
       document.documentElement.style.setProperty('--LightHF', theme.LightHF);
       sun.style.display = theme.sunDisplay;
       moon.style.display = theme.moonDisplay;
-      shower.textContent = theme.text;
-      console.log(shower)
+      shower[1].textContent = theme.text;
+      
 };
 
 // =============NAV BUTTON===========
