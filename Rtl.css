@@ -1079,8 +1079,8 @@ background: linear-gradient(180deg,var(--colorDes),var(--bg));
 .slide-gif .gif::after {
   content: "";
   position: absolute;
-  width: 98%;
-  height: 98%;
+  width: 99%;
+  height: 99%;
   z-index: 1;
   border-top: 5px solid var(--colorDes);
   border-left: 5px solid var(--colorDes);
@@ -1098,8 +1098,8 @@ background: linear-gradient(180deg,var(--colorDes),var(--bg));
   transition: 0.4s all ease;
   bottom: 0;
   right: 0;
-  width: 98%;
-  height: 98%;
+  width: 99%;
+  height: 99%;
   border-radius: 50%;
 }
 .slide-gif .gif:hover {
