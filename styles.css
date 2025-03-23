@@ -166,7 +166,7 @@ a{
   background: linear-gradient(20deg, var(--colorDes), transparent);
   z-index: 1000;
   backdrop-filter: blur(10px);
-  border-bottom: 2px solid var(--bg);
+/*   border-bottom: 2px solid var(--bg); */
   box-shadow: 5px 5px 20px #111;
 }
 
