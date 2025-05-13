@@ -69,16 +69,11 @@ const applyTheme =(theme)=>{
 
 const goTopBtn = document.querySelector(".go-top-btn");
 
-window.addEventListener("scroll", checkHeight);
-
 function checkHeight() {
-  if (window.matchMedia("(max-width:768px)").matches) {
-    if (window.scrollY > 200) {
-      goTopBtn.style.display = "flex";
-      goTopBtn.classList.add("btn-anim");
-    } else {
-      goTopBtn.style.display = "none";
-    }
+  if (window.scrollY > 200) {
+    goTopBtn.style.bottom = "35px";
+  } else {
+    goTopBtn.style.bottom = "-100%";
   }
 }
 
@@ -88,7 +83,6 @@ goTopBtn.addEventListener("click", () => {
     behavior: "smooth",
   });
 });
-
 // ==================STATIS COUNTER===================
 let nums = document.querySelectorAll(".nums .num");
 let section = document.querySelector(".three");
