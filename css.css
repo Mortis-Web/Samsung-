@@ -633,21 +633,19 @@ footer .container .contents .subscribe .inputF i {
 }
 
 .go-top-btn {
-  position: fixed;
-  bottom: 35px;
-  right: 25px;
-  cursor: pointer;
+    position: fixed;
+    right: 15px;
+    bottom: -100%;
   color: rgba(30, 58, 138,0.95);
-  transition: all 0.4s;
-  z-index: 1;
-  z-index: 1000000;
-  transform: scale(1.75);
-  opacity: 0;
-}
-
-.btn-anim {
-  animation: btn 0.5s linear;
-}
+    z-index: 100;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: all 0.5s ease-out;
+    will-change:bottom;
+    font-size: 1.5rem;
+  }
+  
 
 .re-slide {
   animation: re-slide 0.2s linear forwards;
