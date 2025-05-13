@@ -2,17 +2,11 @@
 
 const goTopBtn = document.querySelector(".go-top-btn");
 
-window.addEventListener("scroll", checkHeight);
-
 function checkHeight() {
-  if (window.matchMedia("(max-width:768px)").matches) {
-    if (window.scrollY > 200) {
-      goTopBtn.style.display = "flex";
-      goTopBtn.style.opacity = "1";
-      goTopBtn.classList.add("btn-anim");
-    } else {
-      goTopBtn.style.display = "none";
-    }
+  if (window.scrollY > 200) {
+    goTopBtn.style.bottom = "35px";
+  } else {
+    goTopBtn.style.bottom = "-100%";
   }
 }
 
@@ -22,7 +16,6 @@ goTopBtn.addEventListener("click", () => {
     behavior: "smooth",
   });
 });
-
 // ==============HEADER LIST==============
 let exit = document.querySelector(".exit-list");
 let darkBg = document.querySelector(".overlay");
