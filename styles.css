@@ -5,6 +5,7 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  transition:color,background 0.3s ease;
 }
 
 html {
@@ -1716,4 +1717,5 @@ transform: scale(0.7);
     height:750px !important;
   }
 }
+
 
