@@ -174,14 +174,14 @@ a{
   display: flex;
   align-items: center;
   justify-content: space-between;
-  padding: 0.5rem 1rem;
+  padding:1rem;
 }
 .logo-holder {
   display: flex;
-  width:130px;
+  width:172px;
 }
 .navbar img {
-  width: 100%;
+  width: 90%;
 }
 .logo {
   font-size: 1.5rem;
@@ -1716,3 +1716,4 @@ transform: scale(0.7);
     height:750px !important;
   }
 }
+
